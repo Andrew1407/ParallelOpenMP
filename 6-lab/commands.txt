@@ -1,0 +1,7 @@
+c++ -o out -fopenmp Parallel_OpenMP.cpp
+icc -O0 -fopenmp Parallel_OpenMP.cpp -o out
+icc -ipo -fopenmp Parallel_OpenMP.cpp -o out
+icc -O1 -ipo -fopenmp Parallel_OpenMP.cpp -o out
+icc -prof-gen -fopenmp Parallel_OpenMP.cpp -o out
+icc -prof-use -fopenmp Parallel_OpenMP.cpp -o out
+icc -parallel -fopenmp Parallel_OpenMP.cpp -o out
